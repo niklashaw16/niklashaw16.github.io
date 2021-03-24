@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="/site.css">
+</head>
+<body>
+<div style="text-align:center" class="font">
+
+        <!--Intro-->
+        <div class="tab">
+          <h2>Welcome to our Stereooptic Fusion Test!</h2>
+            <p>This program is a test to measure your  stereopsis capacity.</p><br>
+<p> For this test, please set your computer to a resolution of 1366 x 768 pixels. </p>
+        </div>
+        <div class="tab">
+          <h2>Welcome to our Stereooptic Fusion Test!</h2>
+            <img src="https://dl.dropboxusercontent.com/s/05r8vhrpjmwikcb/svrm_intro_image.jpg?dl=0" height="400" />
+        </div>
+
+        <!--base1-->
+        <div class="tab">
+            <h2>What do you see in this Image?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/base_question_1.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="base1" value="true" onclick="timetosolvefunction()">Star</label>
+            <label><input type="radio" name="base1" value="false" onclick="timetosolvefunction()">Square</label>
+            <label><input type="radio" name="base1" value="false" onclick="timetosolvefunction()">Triangle</label>
+            <br />
+        </div>
+
+        <!--base2-->
+        <div class="tab">
+            <h2>What do you see in this Image?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/base_question_2.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="base2" value="false" onclick="timetosolvefunction()">Triangle</label>
+            <label><input type="radio" name="base2" value="true" onclick="timetosolvefunction()">Circle</label>
+            <label><input type="radio" name="base2" value="false" onclick="timetosolvefunction()">Square</label>
+            <br />
+        </div>
+
+        <!--base3-->
+        <div class="tab">
+            <h2>What do you see in this Image?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/base_question_3.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="base3" value="false" onclick="timetosolvefunction()">Circle</label>
+            <label><input type="radio" name="base3" value="false" onclick="timetosolvefunction()">Triangle</label>
+            <label><input type="radio" name="base3" value="true" onclick="timetosolvefunction()">Square</label>
+            <br />
+        </div>
+
+        <!--base4-->
+        <div class="tab">
+            <h2>What do you see in this Image?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/base_question_4.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="base4" value="true" onclick="timetosolvefunction()">Triangle</label>
+            <label><input type="radio" name="base4" value="false" onclick="timetosolvefunction()">Ellipse</label>
+            <label><input type="radio" name="base4" value="false" onclick="timetosolvefunction()">Square</label>
+            <br />
+        </div>
+
+        <!--base5-->
+        <div class="tab">
+            <h2>What do you see in this Image?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/base_question_5.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="base5" value="false" onclick="timetosolvefunction()">Star</label>
+            <label><input type="radio" name="base5" value="false" onclick="timetosolvefunction()">Circle</label>
+            <label><input type="radio" name="base5" value="true" onclick="timetosolvefunction()">Square</label>
+            <br />
+        </div>
+
+        <!--base6-->
+        <div class="tab">
+            <h2>What do you see in this Image?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/base_question_6.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="base6" value="false" onclick="timetosolvefunction()">Circle</label>
+            <label><input type="radio" name="base6" value="false" onclick="timetosolvefunction()">Hexagone</label>
+            <label><input type="radio" name="base6" value="true" onclick="timetosolvefunction()">Triangle</label>
+            <br />
+        </div>
+
+        <!--base7-->
+        <div class="tab">
+            <h2>What do you see in this Image?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/base_question_7.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="base7" value="false" onclick="timetosolvefunction()">Circle</label>
+            <label><input type="radio" name="base7" value="true" onclick="timetosolvefunction()">Hexagone</label>
+            <label><input type="radio" name="base7" value="false" onclick="timetosolvefunction()">Ellipse</label>
+            <br />
+        </div>
+
+        <!--base8-->
+        <div class="tab">
+            <h2>What do you see in this Image?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/base_question_8.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="base8" value="false" onclick="timetosolvefunction()">Circle & Star</label>
+            <label><input type="radio" name="base8" value="false" onclick="timetosolvefunction()">Hexagone & Ellipse</label>
+            <label><input type="radio" name="base8" value="true" onclick="timetosolvefunction()">Star & Triangle</label>
+            <br />
+        </div>
+
+        <!--base9-->
+        <div class="tab">
+            <h2>What do you see in this Image?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/base_question_9.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="base9" value="true" onclick="timetosolvefunction()">Ellipse, Square, Circle</label>
+            <label><input type="radio" name="base9" value="false" onclick="timetosolvefunction()">Star, Square, Circle</label>
+            <label><input type="radio" name="base9" value="false" onclick="timetosolvefunction()">Star, Square, Triangle</label>
+            <br />
+        </div>
+
+        <!--base10-->
+        <div class="tab">
+            <h2>What do you see in this Image?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/base_question_10.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="base10" value="false" onclick="timetosolvefunction()">Ellipse, Square, Circle</label>
+            <label><input type="radio" name="base10" value="false" onclick="timetosolvefunction()">Star, Square, Circle</label>
+            <label><input type="radio" name="base10" value="true" onclick="timetosolvefunction()">Star, Square, Triangle</label>
+            <br />
+        </div>
+
+        <!--Picture1-->
+        <div class="tab">
+            <h2>What do you see in this Image?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/square_3.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="q1" value="true" onclick="timetosolvefunction()">Square</label>
+            <label><input type="radio" name="q1" value="false" onclick="timetosolvefunction()">Circle</label>
+            <label><input type="radio" name="q1" value="false" onclick="timetosolvefunction()">Stop sign</label>
+            <br />
+        </div>
+
+        <!--Picture2-->
+        <div class="tab">
+            <h2>What do you see in this Image?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/circle_3.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="q2" value="false" onclick="timetosolvefunction()">Square</label>
+            <label><input type="radio" name="q2" value="true" onclick="timetosolvefunction()">Circle</label>
+            <label><input type="radio" name="q2" value="false" onclick="timetosolvefunction()">Nothing</label>
+            <br />
+        </div>
+
+        <!--newpictures-->
+        <div class="tab">
+            <h2>What do you see in this Image?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/circle_2p2.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="q3" value="true" onclick="timetosolvefunction()">Circle</label>
+            <label><input type="radio" name="q3" value="false" onclick="timetosolvefunction()">No parking sign</label>
+            <label><input type="radio" name="q3" value="false" onclick="timetosolvefunction()">Triangle</label>
+            <br />
+        </div>
+
+        <div class="tab">
+            <h2>What do you see in this Image?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/circle_2p3.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="q4" value="false" onclick="timetosolvefunction()">Stop sign</label>
+            <label><input type="radio" name="q4" value="true" onclick="timetosolvefunction()">Circle</label>
+            <label><input type="radio" name="q4" value="false" onclick="timetosolvefunction()">No left turn sign</label>
+            <br />
+        </div>
+
+        <div class="tab">
+            <h2>What do you see in this Image?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/square_2p3.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="q5" value="false" onclick="timetosolvefunction()">Circle</label>
+            <label><input type="radio" name="q5" value="false" onclick="timetosolvefunction()">Triangle</label>
+            <label><input type="radio" name="q5" value="true" onclick="timetosolvefunction()">Square</label>
+            <br />
+        </div>
+
+        <div class="tab">
+            <h2>What do you see in this Image?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/square_2p4.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="q6" value="true" onclick="timetosolvefunction()">Square</label>
+            <label><input type="radio" name="q6" value="false" onclick="timetosolvefunction()">Triangle</label>
+            <label><input type="radio" name="q6" value="false" onclick="timetosolvefunction()">No left turn sign</label>
+            <br />
+        </div>
+
+        <div class="tab">
+            <h2>What do you see in this Image?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/triangle_2p2.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="q7" value="false" onclick="timetosolvefunction()">Square</label>
+            <label><input type="radio" name="q7" value="true" onclick="timetosolvefunction()">Triangle</label>
+            <label><input type="radio" name="q7" value="false" onclick="timetosolvefunction()">Circle</label>
+            <br />
+        </div>
+
+        <div class="tab">
+            <h2>What do you see in this Image?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/triangle_2p3.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="q8" value="true" onclick="timetosolvefunction()">Triangle</label>
+            <label><input type="radio" name="q8" value="false" onclick="timetosolvefunction()">No parking sign</label>
+            <label><input type="radio" name="q8" value="false" onclick="timetosolvefunction()">No left turn sign</label>
+            <br />
+        </div>
+    
+        <div class="tab">
+            <h2>What do you see in this Image?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/triangle_3p2.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="q9" value="false" onclick="timetosolvefunction()">Square</label>
+            <label><input type="radio" name="q9" value="true" onclick="timetosolvefunction()">Triangle</label>
+            <label><input type="radio" name="q9" value="false" onclick="timetosolvefunction()">No left turn sign</label>
+            <br />
+        </div>
+
+        <div class="tab">
+            <h2>What do you see in this Image?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/circle_3p4.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="q10" value="false" onclick="timetosolvefunction()">No left turn sign</label>
+            <label><input type="radio" name="q10" value="false" onclick="timetosolvefunction()">No parking sign</label>
+            <label><input type="radio" name="q10" value="true" onclick="timetosolvefunction()">Circle</label>
+            <br />
+        </div>
+
+        <div class="tab">
+            <h2>What do you see in this Image?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/square_3p5.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="q11" value="false" onclick="timetosolvefunction()">Circle</label>
+            <label><input type="radio" name="q11" value="true" onclick="timetosolvefunction()">Square</label>
+            <label><input type="radio" name="q11" value="false" onclick="timetosolvefunction()">No left turn sign</label>
+            <br />
+        </div>
+
+        <!--endnewpictures-->
+
+        <!--Picture3-->
+        <div class="tab">
+            <h2>What do you see in this Image?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/stop_sign_3.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="q12" value="false" onclick="timetosolvefunction()">Circle</label>
+            <label><input type="radio" name="q12" value="true" onclick="timetosolvefunction()">No parking sign</label>
+            <label><input type="radio" name="q12" value="false" onclick="timetosolvefunction()">No left turn sign</label>
+            <br />
+        </div>
+
+        <!--Picture4-->
+        <div class="tab">
+            <h2>Which object do you see more near you?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/moonright_1n .jpg" height="400" />
+            <br />
+            <label><input type="radio" name="q13" value="false" onclick="timetosolvefunction()">1</label>
+            <label><input type="radio" name="q13" value="false" onclick="timetosolvefunction()">2</label>
+            <label><input type="radio" name="q13" value="true" onclick="timetosolvefunction()">3</label>
+            <br />
+        </div>
+
+        <!--Picture5-->
+        <div class="tab">
+            <h2>Which object do you see more near you?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/moonleft_2n .jpg" height="400" />
+            <br />
+            <label><input type="radio" name="q14" value="true" onclick="timetosolvefunction()">1</label>
+            <label><input type="radio" name="q14" value="false" onclick="timetosolvefunction()">2</label>
+            <label><input type="radio" name="q14" value="false" onclick="timetosolvefunction()">3</label>
+            <br />
+        </div>
+
+        <!--Picture6-->
+        <div class="tab">
+            <h2>Which object do you see more near you?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/rocks_3pixels.PNG" height="400" />
+            <br />
+            <label><input type="radio" name="q15" value="false" onclick="timetosolvefunction()">1</label>
+            <label><input type="radio" name="q15" value="false" onclick="timetosolvefunction()">2</label>
+            <label><input type="radio" name="q15" value="true" onclick="timetosolvefunction()">3</label>
+            <label><input type="radio" name="q15" value="true" onclick="timetosolvefunction()">4</label>
+            <br />
+        </div>
+
+        <!--Picture7-->
+        <div class="tab">
+            <h2>What do you see in this image?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/5circles_1.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="q16" value="false" onclick="timetosolvefunction()">3 circles</label>
+            <label><input type="radio" name="q16" value="true" onclick="timetosolvefunction()">5 circles</label>
+            <label><input type="radio" name="q16" value="false" onclick="timetosolvefunction()">4 circles</label>
+            <br />
+        </div>
+
+        <!--Picture8-->
+        <div class="tab">
+            <h2>What do you see in this image?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/forms_2.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="q17" value="true" onclick="timetosolvefunction()">Circle, Square, Triangle</label>
+            <label><input type="radio" name="q17" value="false" onclick="timetosolvefunction()">Rectangle, Star, Circle</label>
+            <label><input type="radio" name="q17" value="false" onclick="timetosolvefunction()">Triangle, Hexagon, Ellipse</label>
+            <br />
+        </div>
+
+        <!--Picture9-->
+        <div class="tab">
+            <h2>What do you see in this image?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/fptoz_1.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="q18" value="false" onclick="timetosolvefunction()">HUGF</label>
+            <label><input type="radio" name="q18" value="true" onclick="timetosolvefunction()">FPTOZ</label>
+            <label><input type="radio" name="q18" value="false" onclick="timetosolvefunction()">FRTOZ</label>
+            <br />
+        </div>
+
+        <!--Picture10-->
+        <div class="tab">
+            <h2>What do you see in this image?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/YASTOZ_1.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="q19" value="false" onclick="timetosolvefunction()">FPTOZ</label>
+            <label><input type="radio" name="q19" value="false" onclick="timetosolvefunction()">YAZIOZ</label>
+            <label><input type="radio" name="q19" value="true" onclick="timetosolvefunction()">YASTOZ</label>
+            <br />
+        </div>
+
+        <!--Picture11-->
+        <div class="tab">
+            <h2>What do you see in this image?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/fptoz_2.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="q20" value="true" onclick="timetosolvefunction()">FPTOZ</label>
+            <label><input type="radio" name="q20" value="false" onclick="timetosolvefunction()">FRTIOZ</label>
+            <label><input type="radio" name="q20" value="false" onclick="timetosolvefunction()">EPTOZ</label>
+            <br />
+        </div>
+
+        <!--Picture12-->
+        <div class="tab">
+            <h2>What do you see in this image?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/forms_3.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="q21" value="false" onclick="timetosolvefunction()">Rectangle, Star, Circle</label>
+            <label><input type="radio" name="q21" value="true" onclick="timetosolvefunction()">Square, Circle, Triangle</label>
+            <label><input type="radio" name="q21" value="false" onclick="timetosolvefunction()">Triangle, Hexagon, Ellipse</label>
+            <br />
+        </div>
+
+        <!--Picture13-->
+        <div class="tab">
+            <h2>What do you see in this image?</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/5circles_3.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="q22" value="false" onclick="timetosolvefunction()">2 circles</label>
+            <label><input type="radio" name="q22" value="false" onclick="timetosolvefunction()">3 circles</label>
+            <label><input type="radio" name="q22" value="true" onclick="timetosolvefunction()">5 circles</label>
+            <br />
+        </div>
+
+        <!--Picture14-->
+        <div class="tab">
+            <h2>Order the objects starting from the most near you to the further away</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/forms_1.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="q23" value="true" onclick="timetosolvefunction()">Square, Circle, Triangle</label>
+            <label><input type="radio" name="q23" value="false" onclick="timetosolvefunction()">Circle, Square, Triangle</label>
+            <label><input type="radio" name="q23" value="false" onclick="timetosolvefunction()">Circle, Triangle, Square</label>
+            <br />
+        </div>
+
+        <!--Picture15-->
+        <div class="tab">
+            <h2>Order the objects starting from the most near you to the further away</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/moon_n.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="q24" value="false" onclick="timetosolvefunction()">1,2,3</label>
+            <label><input type="radio" name="q24" value="false" onclick="timetosolvefunction()">3,2,1</label>
+            <label><input type="radio" name="q24" value="true" onclick="timetosolvefunction()">2,1,3</label>
+            <br />
+        </div>
+
+        <!--Picture16-->
+        <div class="tab">
+            <h2>Order the objects starting from the most near you to the further away</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/layers_2n.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="q25" value="true" onclick="timetosolvefunction()">1,2,3</label>
+            <label><input type="radio" name="q25" value="false" onclick="timetosolvefunction()">3,2,1</label>
+            <label><input type="radio" name="q25" value="false" onclick="timetosolvefunction()">2,3,1</label>
+            <br />
+        </div>
+
+        <!--Picture17-->
+        <div class="tab">
+            <h2>Order the objects starting from the most near you to the further away</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/layers_3n.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="q26" value="false" onclick="timetosolvefunction()">1,2,3</label>
+            <label><input type="radio" name="q26" value="false" onclick="timetosolvefunction()">3,2,1</label>
+            <label><input type="radio" name="q26" value="true" onclick="timetosolvefunction()">3,1,2</label>
+            <br />
+        </div>
+
+        <!--Picture18-->
+        <div class="tab">
+            <h2>Order the objects starting from the most near you to the further away</h2>
+            <img src="https://niklashaw16.github.io/niklashaw16.github.io/images/fptoz_4.jpg" height="400" />
+            <br />
+            <label><input type="radio" name="q27" value="true" onclick="timetosolvefunction()">T,P,rest</label>
+            <label><input type="radio" name="q27" value="false" onclick="timetosolvefunction()">P,T,rest</label>
+            <label><input type="radio" name="q27" value="false" onclick="timetosolvefunction()">Z,T,rest</label>
+            <br />
+        </div>
+
+        <!--Outro-->
+        <div class="tab">
+          <h2>Welcome to our Stereooptic Fusion Test!</h2>
+            <p>Thank you for participating in this test!</p><br>
+            <p>Please submit your results via email.</p>
+        </div>  
+
+  <div class="stopwatch">
+    <button class="button" id="playButton" onclick="nextPrev(1)">Start the survey</button>
+    <button class="button" id="sendmailButton" onclick="sendresults()">Send results via Email</button>
+  </div>
+  <div>
+    <div>
+      <button class="button" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+
+
+
+    <!-- Circles which indicates the steps of the form: -->
+    <div style="text-align:center;margin-top:40px;">
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+    </div>
+
+    <p id="listofscores">
+
+    </p>
+    <p id="listoftimes">
+
+        </p>
+    </div>
+
+</div>
+<script src="/site.js" type="text/javascript"></script>
+</body>
